@@ -7,8 +7,8 @@
 }
 
 body {
-    background-image: url(../images/bg/Layer\ 4.png);
-    background-size: 100% 100%;
+    background-image: url(../images/bg/Rounded\ Rectangle\ 5\ copy\ 2.svg), url(../images/bg/Layer\ 4.png);
+    background-size: 1920px;
     background-position: center;
     font-family: 'Roboto',
     sans-serif;
@@ -19,8 +19,8 @@ body {
     align-items: center;
 }
 
+
 .container{
-    background-image: url(../images/bg/Rounded\ Rectangle\ 4.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -28,7 +28,7 @@ body {
     width: 100%;
     height: 100%;
     grid-template-columns: auto 66% auto;
-    grid-template-rows: 20px 105px 445px 745px auto;
+    grid-template-rows: 20px 105px 445px 700px auto;
 }
 
 .background {
@@ -164,14 +164,14 @@ main {
 
 iframe{
     width: 60vw;
-    height: 60vh;
+    height: 30vw;
     position: absolute;
     border-radius: 20px;
 }
 
 .videos {
     width: 65vw;
-    height: 67vh;
+    height: auto;
 }
 
 .signup{
@@ -219,6 +219,10 @@ h1 {
         height: auto;
     }
 
+    .container{
+        grid-template-rows: 20px 105px 445px 600px auto;
+    }
+
 }
 
 @media(max-width: 1432px) {
@@ -253,4 +257,72 @@ h1 {
     #b1{
         margin: 0;
     }
+
+        .container {
+            grid-template-rows: 20px 105px 445px 600px auto;
+        }
+}
+
+#hamburger{
+    display: none;
+}
+
+@media(max-width: 720px) {
+    .logo{
+        margin: 0;
+        margin-left: 30px;
+    }
+    .navright{
+        display: none;
+    }
+    #hamburger{
+        display: block;
+        color: white;
+        font-size: 2em;
+        margin-right: 30px;
+    }
+
+    nav{
+        margin: 0 -60px;
+        height: auto;
+    }
+
+        .container {
+            grid-template-rows: 20px 105px 445px 400px auto;
+        }
+
+
+}
+
+@media(max-width: 500px) {
+   p {
+        font-size: 16px;
+        width: 100vw;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    h1{
+        font-size: 25px;
+    }
+
+    .leftheader{
+        height: 500px;
+    }
+
+    .buttons{
+        flex-direction: column;
+        height: 100px;
+        align-items: center;
+    }
+
+        .container {
+            grid-template-rows: 20px 105px 445px 250px auto;
+        }
+
+}
+
+button{
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 100%;
 }
