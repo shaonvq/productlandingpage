@@ -16,39 +16,53 @@
 
         <div class="container">
 
-            <nav>
-                <span class="logo">cloud up</span>
-                <div class="navright">
-                    <span class="signup">sign up</span>
-                    <span class="login">login</span>
-                </div>
-                <i id="hamburger" class="fas fa-bars"></i>
-            </nav>
-            <header>
-                <div class="leftheader">
-                    <h1>Lorem ipsum dolor sit amet</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at nunc pulvinar, rhoncus leo eu, malesuada
-                        nunc. Cras sagittis cursus lorem, a posuere nisl convallis sit amet. Integer lobortis consectetur pulvinar.
-                        Sed sed lectus at est dictum bibendum. Mauris maximus nunc vitae quam feugiat feugiat. Sed in orci ornare,
-                        tristique augue ut, auctor ante.</p>
-                    <div class="buttons" >
-                        <button id="b1">CREATE ACCOUNT</button>
-                        
-                        <button id="b2">CONTACT US</button>
+
+            <header id="header">
+                <nav id="nav-bar">
+                    <a class="nav-link" class="logo" href="#header-img"><span class="logo">cloud up</span></a>
+                    <div class="navright">
+                        <a class="nav-link" href="#lowerheader">
+                            <span class="signup">sign up</span>
+                        </a>
+                        <a class="nav-link" href="#b1">
+                            <span class="login">login</span>
+                        </a>
                     </div>
-                    <img class="cloud2" draggable="false" style="-moz-user-select: none;" ondragstart="return false;" onContextMenu="return false;"
+                    <i id="hamburger" class="fas fa-bars"></i>
+                </nav>
+                <div class="leftheader">
+                    <div id="lowerheader">
+                        <h1 id="title">Lorem ipsum dolor sit amet</h1>
+                        <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at nunc pulvinar, rhoncus leo eu, malesuada
+                            nunc. Cras sagittis cursus lorem, a posuere nisl convallis sit amet. Integer lobortis consectetur pulvinar.
+                            Sed sed lectus at est dictum bibendum. Mauris maximus nunc vitae quam feugiat feugiat. Sed in orci ornare,
+                            tristique augue ut, auctor ante.</p>
+                        <div class="buttons" >
+                            <button id="b1">CREATE ACCOUNT</button>
+                            
+                            <button id="b2">CONTACT US</button>
+
+                        </div>
+                        <img class="cloud2" draggable="false" style="-moz-user-select: none;" ondragstart="return false;" onContextMenu="return false;"
+                            src="./images/header/cloud copy 2.png" alt="cloud">
+                        <form id="form" action="https://www.freecodecamp.com/email-submit">
+                            <label for="email" id="email-label"></label>
+                            <input type="email" placeholder="email" name="email" id="email">
+                            <input type="submit" id="submit" value="✓">
+                        </form>
+                    </div>
+                    <img id="header-img" class="cloud" draggable="false" style="-moz-user-select: none;" ondragstart="return false;" onContextMenu="return false;"
                         src="./images/header/cloud copy 2.png" alt="cloud">
                 </div>
-                <img class="cloud" draggable="false" style="-moz-user-select: none;" ondragstart="return false;" onContextMenu="return false;"
-                    src="./images/header/cloud copy 2.png" alt="cloud">
+                
             </header>
             <main>
-                <iframe src="https://www.youtube.com/embed/czizBiAhHiI" frameborder="0" allow="autoplay; encrypted-media"
+                <iframe id="video" src="https://www.youtube.com/embed/czizBiAhHiI" frameborder="0" allow="autoplay; encrypted-media"
                     allowfullscreen></iframe>
                 <img class="videos" src="./images/video/Rounded Rectangle 5.png" alt="video">
             </main>
         </div>
-
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
         <link rel="stylesheet" href="./style/master.css">
         
     </body>
