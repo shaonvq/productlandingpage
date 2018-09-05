@@ -153,7 +153,7 @@ button{
     font-weight: 500;
     font-size: 16px;
     height: 36px;
-    width: 200px;
+    width: 220px;
     line-height: 100%;
 }
 
@@ -261,13 +261,12 @@ iframe{
     height: 30vw;
     position: absolute;
     border-radius: 20px;
-    margin-bottom: 50px
 }
 
 .videos {
     width: 65vw;
     height: auto;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 .signup{
